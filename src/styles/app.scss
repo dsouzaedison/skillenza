@@ -1,0 +1,24 @@
+$fontSize: 26px;
+
+body {
+    padding: 0;
+    margin: 0;
+    a {
+        color: red;
+        & ul {
+            line-height: 1;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    & ul {
+        line-height: 1;
+        font: {
+            size: $fontSize;
+            weight: bold;
+        }
+    }
+}
+

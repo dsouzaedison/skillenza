@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="skillenza">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords"
           content="">
     <meta name="description" content="">
-    <link rel="shortcut icon" type="image/x-icon" href=""/>
     <title>Title</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="app.css"/>
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
-    <script src="scripts/routes.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/config/config.js"></script>
-    <script src="scripts/appJQ.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href=""/>
+    <!-- build:css vendor.min.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="src/app.css"/>
+    <link rel="stylesheet" href="src/styles/css/app.css">
+    <!-- endbuild -->
+    <!-- build:js vendor.min.js -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="src/scripts/config/config.js"></script>
+    <script src="src/scripts/app.js"></script>
+    <script src="src/scripts/appJQ.js"></script>
+    <!-- endbuild -->
 </head>
 <body ng-controller="myCtrl">
 Welcome to Angular Bootstrap Font-Awesome Boilerplate.
-<div class="ng-view"></div>
 </body>
 </html>

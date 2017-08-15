@@ -1,0 +1,35 @@
+{
+  "name": "skillenza",
+  "version": "1.0.0",
+  "description": "Data Science challenge 2017",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsouzaedison/skillenza.git"
+  },
+  "author": "dsouzaedison11@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsouzaedison/skillenza/issues"
+  },
+  "homepage": "https://github.com/dsouzaedison/skillenza#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.2"
+  },
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1"
+  }
+}
