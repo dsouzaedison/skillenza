@@ -118,19 +118,18 @@
             <div class="container">
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                            <!--<div class="card">-->
-                                <!--<h3 class="section-header">HOW IT WORKS</h3>-->
-                                <div class="col-lg-12">
-                                    <div class="row">
-                                        <div class="col-lg-3">
-                                            <div class="working">
-                                                <!--<i class="fa fa-calendar"></i>-->
-                                            </div>
+                        <h3 class="section-header text-center">HOW IT WORKS</h3>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-lg-push-1 col-md-2 col-md-push-1 col-sm-4 col-xs-12" ng-repeat="work in works">
+                                    <div class="working text-center">
+                                        <div class="working-block">
+                                            <i class="fa {{work.icon}}"></i>
+                                            <h4 class="text-center work-title">{{work.title}}</h4>
                                         </div>
                                     </div>
                                 </div>
-                            <!--</div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,22 +137,22 @@
         </div>
 
         <!--<div class="section-2">-->
-            <!--<div class="container">-->
-                <!--<div class="col-lg-12">-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">-->
-                            <!--<div class="card">-->
-                                <!--<h3>Data Visualization</h3>-->
-                                <!--<p>-->
-                                    <!--Discover, model and visualize interesting relationships among attributes of any-->
-                                    <!--dataset of your choice. Examples of cool data sets to explore visually are census-->
-                                    <!--data, earthquake data, Environ emails etc.-->
-                                <!--</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
+        <!--<div class="container">-->
+        <!--<div class="col-lg-12">-->
+        <!--<div class="row">-->
+        <!--<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">-->
+        <!--<div class="card">-->
+        <!--<h3>Data Visualization</h3>-->
+        <!--<p>-->
+        <!--Discover, model and visualize interesting relationships among attributes of any-->
+        <!--dataset of your choice. Examples of cool data sets to explore visually are census-->
+        <!--data, earthquake data, Environ emails etc.-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
         <!--</div>-->
 
     </div>

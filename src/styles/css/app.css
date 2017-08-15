@@ -170,3 +170,19 @@ body {
     .card {
       margin: 5px auto;
       min-height: 50px; } }
+
+.working-block {
+  margin: 10px auto; }
+
+.working-block > i {
+  color: #E91E63;
+  font-size: 50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 100px;
+  text-align: center; }
+
+.work-title {
+  margin-top: 20px; }

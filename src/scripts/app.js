@@ -33,4 +33,23 @@ angular.module('skillenza', ['appConfig'])
                 description: 'It\'s completely open. Hack away at whatever strikes your fancy. Use any APIs you are comfortable with. Build ANYTHING you want. It could be face-recognition devices, visual search engines, recommendation services ...'
             }
         ];
+
+        $scope.works = [
+            {
+                icon: 'fa-id-card',
+                title: 'APPLY'
+            },{
+                icon: 'fa-calendar',
+                title: 'ATTEND'
+            },{
+                icon: 'fa-code',
+                title: 'CODE'
+            },{
+                icon: 'fa-arrows-alt',
+                title: 'SHOWTIME'
+            },{
+                icon: 'fa-money',
+                title: 'PRIZE'
+            },
+        ];
     });
