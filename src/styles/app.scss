@@ -171,11 +171,25 @@ body {
 
 .section-2, .section-2:after {
   margin-top: -140px !important;
+  @media screen and (max-width: $sm) {
+    margin-top: -70px !important;
+  }
 }
 
 .section-3, .section-3:after {
   background: #E91E63;
   margin-top: -30px !important;
+  padding-bottom: 80px;
+  @media screen and (max-width: $sm) {
+    margin-top: -15px !important;
+  }
+}
+
+.section-4, .section-4:after {
+  margin-top: -100px !important;
+  @media screen and (max-width: $sm) {
+    margin-top: -90px !important;
+  }
 }
 
 .section-header {
@@ -216,4 +230,30 @@ body {
 
 .work-title {
   margin-top: 20px;
+}
+
+.organizers {
+  min-height: auto;
+  padding: 35px 0;
+  overflow-y: auto;
+}
+
+.organizer-logo-wrapper {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  overflow: hidden;
+  text-align: center;
+  background: #E91E63;
+  margin: 5px auto;
+}
+
+.organizer-logo {
+  max-width: 100px;
+}
+
+.organizer-info {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.45;
 }
