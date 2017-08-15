@@ -5,14 +5,24 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 // var cleanCSS = require('gulp-clean-css');
 var build = require('gulp-useref');
-var browserSync = require('browser-sync');
-var gulpCopy = require('gulp-copy');
+var browserSync = require('browser-sync').create();
+var watch = require('gulp-watch');
 
-gulp.task('sass', function () {
+gulp.task('sass', function() {
     return gulp.src('./src/styles/*.scss')
         .pipe(sass())
-        // .pipe(cleanCSS())
         .pipe(gulp.dest('./src/styles/css'))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('serve', ['sass'], function() {
+
+    browserSync.init({
+        server: "./"
+    });
+
+    gulp.watch('./src/styles/*.scss', ['sass']);
+    gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
 gulp.task('build', function () {
@@ -21,9 +31,9 @@ gulp.task('build', function () {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('copy', function () {
-    return gulp.src('./src/assets/*')
-        .pipe(gulp.dest('./dist/assets'));
+gulp.task('stream', function () {
+    // Endless stream mode
+    return watch('/src/styles/*.scss', { ignoreInitial: false }, ['sass']);
 });
 
 // Static server
@@ -43,5 +53,5 @@ gulp.task('browser-sync-dev', function() {
     });
 });
 
-gulp.task('dev', ['sass', 'browser-sync-dev']);
+gulp.task('dev', ['serve']);
 gulp.task('default', ['sass', 'build', 'browser-sync-prod']);
