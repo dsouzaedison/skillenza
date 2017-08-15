@@ -4,6 +4,8 @@ $sm: 768px;
 body {
   padding: 0;
   margin: 0;
+  background: rgba(238, 238, 238, 0.42);
+  overflow-x: hidden;
 }
 
 .no-padding {
@@ -139,4 +141,60 @@ body {
   0% {background: rgba(255, 255, 255, 0.2)}
   50% {background: rgba(255, 255, 255, 0.8)}
   100% {background:rgba(255, 255, 255, 0.2)}
+}
+
+.section {
+  width: 100%;
+  min-height: 400px;
+  color: #fff;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.section:after {
+  content: ' ';
+  position: absolute;
+  bottom: -35px;
+  left: -10px;
+  height: 150px;
+  width: 120%;
+  z-index: -1;
+  transform: Rotate(-3deg);
+  -webkit-transform: Rotate(-3deg);
+}
+
+.section-1, .section-1:after {
+  background: #448AFF;
+}
+
+.section-2, .section-2:after {
+  margin-top: -140px !important;
+}
+
+.section-3, .section-3:after {
+  background: #E91E63;
+  margin-top: -30px !important;
+}
+
+.section-header {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  width: 100%;
+  min-height: 250px;
+  color: #757575;
+  background: #fff;
+  margin: 15px auto;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+
+  @media screen and (max-width: $sm) {
+    margin: 5px auto;
+    min-height: 50px;
+  }
 }
