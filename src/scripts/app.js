@@ -1,5 +1,5 @@
-angular.module('skillenza', ['appConfig'])
-    .controller('myCtrl', function ($scope, appConfig) {
+angular.module('skillenza', [])
+    .controller('myCtrl', function ($scope) {
         $scope.tracks = [
             {
                 title: 'Data Visualization',
@@ -50,6 +50,34 @@ angular.module('skillenza', ['appConfig'])
             },{
                 icon: 'fa-money',
                 title: 'PRIZE'
-            },
+            }
+        ];
+
+        $scope.faqs = [
+            {
+                question: 'Can any one participate?',
+                answer: 'This is strictly for students only. However, if you are an experienced developer, a still want to have fun, you can mentor a student team. But you will not be eligible for any prizes.'
+            },{
+                question: 'What is the venue for the challenge?',
+                answer: 'No. 389, 12 Main, 1st Cross, Indiranagar, Bangalore 560038'
+            },{
+                question: 'Is it compulsory to stay back?',
+                answer: 'If you have to go home for the night, we won\'t stop you. Just come back the next morning. :)'
+            },{
+                question: 'Do I need to bring my laptop?',
+                answer: 'Yes! Don\'t forget to bring a charger too.'
+            },{
+                question: 'Can I participate as an individual?',
+                answer: 'This is a team event. No lone crusaders, please.'
+            },{
+                question: 'I don\'t have any team members. Where can I find one?',
+                answer: 'Not to worry. Just hop on over to our Vhackers group in Facebook and list your requirements. If you are still having trouble, we will help you find a team member on the day of the hack.'
+            },{
+                question: 'What is the team size limit?',
+                answer: 'Team size is limited to 4. Any more, and the team might be a little crowded, don\'t you think?'
+            },{
+                question: 'Does it cost me anything?',
+                answer: 'No. Nothing. You don\'t even have to pay for food! We will take care of everything. But transportation is your responsibility.'
+            }
         ];
     });

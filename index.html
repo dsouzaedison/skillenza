@@ -72,6 +72,7 @@
         </div>
     </div>
 </div>
+
 <div class="col-lg-12">
     <div class="row">
         <div class="section section-1">
@@ -98,6 +99,7 @@
                 </div>
             </div>
         </div>
+
         <div class="section section-2">
             <div class="container">
                 <div class="col-lg-12">
@@ -171,6 +173,75 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="section section-5">
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <!--<h3 class="section-header text-center">ORGANIZER(S)</h3>-->
+                        <div class="col-lg-12 no-padding">
+                            <div class="row">
+
+                                <div class="col-lg-8">
+                                    <div class="card">
+                                        <div class="panel-group" ng-repeat="faq in faqs">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" ng-href="#collapse{{$index}}">
+                                                            {{faq.question}}
+                                                            <i class="fa fa-chevron-circle-down pull-right"></i>
+                                                            <!--<i class="fa fa-chevron-circle-up pull-right" ng-show="isOpen==$index"></i>-->
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse{{$index}}" class="panel-collapse collapse">
+                                                    <div class="panel-body">{{faq.answer}}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="card faq">
+                                        <h3>FAQ</h3>
+                                        <p>
+                                            Under the FAQ section, you will find answers to the most commonly asked
+                                            questions about our challenges. If you have any questions apart from the
+                                            ones listed on the right, contact us at <a href="mailto:help@venturesity.com" target="_top">help@venturesity.com</a>
+                                        </p>
+                                    </div>
+                                    <div class="social card">
+                                        <!--<h3 class="social-text text-center">WE ARE SOCIAL</h3>-->
+                                        <div class="social-icons text-center">
+                                            <i class="fa fa-facebook"></i>
+                                            <i class="fa fa-twitter"></i>
+                                            <i class="fa fa-google-plus"></i>
+                                            <i class="fa fa-youtube"></i>
+                                        </div>
+                                    </div>
+                                    <div class="social card">
+                                        <h3 class="contact-text text-center">CONTACT</h3>
+                                        <div class="contact">
+                                            <h4><i class="fa fa-map-marker"> 2nd Floor, 514/A, CMH Rd, Indiranagar, Bengaluru KA 560038</i></h4>
+                                            <h4><i class="fa fa-phone"> 080 - 41202465</i></h4>
+                                            <h4><i class="fa fa-envelope"> support@venturesity.com</i></h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31105.357997687457!2d77.6281299!3d12.9609874!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14053d832a8b%3A0x81127c230a6a533e!2sNASSCOM+Startup+Warehouse!5e0!3m2!1sen!2sin!4v1502866878346"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
         <!--<div class="section-2">-->
