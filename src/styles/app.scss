@@ -209,6 +209,15 @@ body {
   }
 }
 
+.section-6 {
+  margin: 0;
+  padding: 0;
+}
+
+.section-5:after, .section-6:after {
+  display: none;
+}
+
 .section-header {
   margin-bottom: 30px;
   margin-top: 50px;
@@ -341,4 +350,13 @@ iframe {
 
 iframe {
   filter: grayscale(100%);
+}
+
+.footer {
+  height: 80px;
+  background: #292929;
+  line-height: 80px;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
 }
