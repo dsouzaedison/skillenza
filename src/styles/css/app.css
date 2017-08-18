@@ -278,3 +278,9 @@ iframe {
 .faq > h3 {
   margin-top: 0;
   margin-bottom: 15px; }
+
+.gm-style .place-card-large {
+  display: none; }
+
+iframe {
+  filter: grayscale(100%); }
