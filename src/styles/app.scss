@@ -290,6 +290,9 @@ body {
 iframe {
   width: 100vw;
   height: 600px;
+  @media screen and (max-width: $sm) {
+    height: 400px;
+  }
 }
 
 .panel-title > a {
@@ -359,4 +362,12 @@ iframe {
   vertical-align: middle;
   text-align: center;
   color: #fff;
+}
+
+.card.faq, .card.social {
+  border-left: 4px solid #448aff;
+}
+
+.section-2 .card {
+  border-top: 4px solid #a3a3a3;
 }
