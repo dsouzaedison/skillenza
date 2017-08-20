@@ -16,3 +16,7 @@
    `npm start`
    
    (Make sure gulp is installed. This command internally uses gulp to run.)
+   
+   OR
+   
+   Click here for [Demo](http://conceptevt.com/skillenza/)
