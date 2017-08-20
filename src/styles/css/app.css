@@ -146,6 +146,11 @@ body {
   z-index: -1;
   transform: Rotate(-3deg);
   -webkit-transform: Rotate(-3deg); }
+  @media screen and (max-width: 768px) {
+    .section:after {
+      left: 0;
+      width: 100%;
+      transform: rotate(0deg) !important; } }
 
 .section-1, .section-1:after {
   background: #448AFF; }
@@ -169,6 +174,10 @@ body {
   @media screen and (max-width: 768px) {
     .section-4, .section-4:after {
       margin-top: -90px !important; } }
+
+@media screen and (max-width: 768px) {
+  .section-4 .card {
+    margin-top: 15px !important; } }
 
 .section-5, .section-5:after {
   margin-top: -100px !important; }

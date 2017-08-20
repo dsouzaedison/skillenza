@@ -170,6 +170,12 @@ body {
   z-index: -1;
   transform: Rotate(-3deg);
   -webkit-transform: Rotate(-3deg);
+
+  @media screen and (max-width: $sm) {
+    left: 0;
+    width: 100%;
+    transform: rotate(0deg) !important;
+  }
 }
 
 .section-1, .section-1:after {
@@ -200,6 +206,12 @@ body {
   margin-top: -100px !important;
   @media screen and (max-width: $sm) {
     margin-top: -90px !important;
+  }
+}
+
+.section-4 .card {
+  @media screen and (max-width: $sm) {
+    margin-top: 15px !important;
   }
 }
 
